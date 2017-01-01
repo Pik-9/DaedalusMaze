@@ -1,4 +1,5 @@
 #include "window.hpp"
+#include "cell.hpp"
 
 #include <QPaintEvent>
 #include <QPainter>

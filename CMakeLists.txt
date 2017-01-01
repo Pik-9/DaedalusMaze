@@ -9,6 +9,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(DMAZE_SRC
   src/main.cpp
   src/window.cpp
+  src/cell.cpp
 )
 
 add_executable(${PROJECT_NAME} ${DMAZE_SRC})
