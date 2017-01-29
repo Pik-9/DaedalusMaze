@@ -11,9 +11,6 @@ enum DIRECTION
   DIRECTION_LEFT = 3
 };
 
-class QPainter;
-class QRect;
-
 class Cell
 {
 private:
@@ -26,8 +23,6 @@ public:
   
   bool doorOpen (const DIRECTION);
   void step ();
-  
-  void drawCell (QPainter*, const QRect*);
 };
 
 #endif

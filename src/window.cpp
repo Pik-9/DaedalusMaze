@@ -5,18 +5,13 @@
 #include <QPainter>
 
 Window::Window (QWidget *parent)
-  : QWidget (parent)
+  : QMainWindow (parent)
 {
   setWindowTitle ("Daedalus' Maze");
   resize (1000, 750);
+  mgrid = new Mazegrid (6, 4);
+  setCentralWidget (mgrid);
 }
 
 Window::~Window ()
 {}
-
-void Window::paintEvent (QPaintEvent *event)
-{
-  QPainter painter (this);
-  painter.fillRect (rect (), Qt::black);
-  painter.end ();
-}

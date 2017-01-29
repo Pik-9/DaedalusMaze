@@ -10,6 +10,7 @@ set(DMAZE_SRC
   src/main.cpp
   src/window.cpp
   src/cell.cpp
+  src/mazeWidget.cpp
 )
 
 add_executable(${PROJECT_NAME} ${DMAZE_SRC})

@@ -1,20 +1,18 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
-#include <QWidget>
+#include <QMainWindow>
 
-class QPaintEvent;
+#include "mazeWidget.hpp"
 
-class Window : public QWidget
+class Window : public QMainWindow
 {
+  Q_OBJECT
 private:
-  
+  Mazegrid *mgrid;
 public:
   Window (QWidget *parent = 0);
   ~Window ();
-  
-protected:
-  void paintEvent (QPaintEvent *event);
 };
 
 #endif
